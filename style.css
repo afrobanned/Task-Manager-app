@@ -22,3 +22,6 @@ font-family: 'IBM Plex Mono', monospace;
 .fruit{
   color:violet
 }
+.container{
+  width:1000px
+}
