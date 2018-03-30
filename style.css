@@ -22,6 +22,6 @@ font-family: 'IBM Plex Mono', monospace;
 .fruit{
   color:violet
 }
-checkbox{
-  color:green
+body{
+  margin:auto;
 }
