@@ -9,4 +9,3 @@ $.getJSON( "https://api.airtable.com/v0/appUAJSEFDMl7iv8C/Tasks?api_key=keyQ7f5Y
     "class": "my-new-list",
     html: items.join( "" )
   }).appendTo( "body" );
-});
