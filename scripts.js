@@ -2,7 +2,7 @@ $.getJSON( "https://api.airtable.com/v0/appUAJSEFDMl7iv8C/Tasks?api_key=keyQ7f5Y
   var items = [];
   $.each( data.records, function( index, val ) {
     console.log(val.fields["Tasks"])
-    items.push( "<li id='" + val.id + "'>" + val.fields["Tasks"] + "</li>" );
+    items.push( "<li id='" + val.id + "'>" + val.fields["Tasks"] + '<input type="checkbox">'+ "</li>" );
   });
 
   $( "<ul/>", {
@@ -11,8 +11,3 @@ $.getJSON( "https://api.airtable.com/v0/appUAJSEFDMl7iv8C/Tasks?api_key=keyQ7f5Y
   }).appendTo( "body" );
   $("<div>I like mangos</div>").appendTo("body")
 });
-function myFunction(){
-  var checkbox=document.getElementById("myCheck");
-  var text
-
-}
