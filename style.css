@@ -2,26 +2,27 @@ h1{
 font-family: 'IBM Plex Mono', monospace;
 }
 .ham{
-  color:Red
+  color:Red;
 }
 .potato{
-  color:orange
+  color:orange;
 }
 .turkey{
-  color:yellow
+  color:yellow;
 }
 .cranberry{
-  color:green
+  color:green;
 }
 .pasta{
-  color:blue
+  color:blue;
 }
 .salad{
-  color:indigo
+  color:indigo;
 }
 .fruit{
-  color:violet
+  color:violet;
 }
 .container{
-  width:1000px
+  width:1000px;
+  margin:auto;
 }
