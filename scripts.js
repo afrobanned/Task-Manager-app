@@ -10,3 +10,16 @@ $.getJSON( "https://api.airtable.com/v0/appUAJSEFDMl7iv8C/Tasks?api_key=keyQ7f5Y
     html: items.join( "" )
   }).appendTo( "body" );
 });
+function openWeekday(evt, weekdayWhich) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(weekdayWhich).style.display = "block";
+    evt.currentTarget.className += " active";
+}

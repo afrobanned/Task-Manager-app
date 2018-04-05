@@ -11,12 +11,45 @@
 <body>
   <!-- This div is creating a container for the whole body -->
   <div class="container">
-
   <!--All of this below is making the title (Task Manager) a rainbow color-->
-      <h1><span class='ham'>T</span><span class='potato'>a</span><span class='turkey'>s</span><span class='cranberry'>k</span>
-        <span class='pasta'>M</span><span class='salad'>a</span><span class='fruit'>n</span><span class='ham'>a</span><span class='potato'>g</span><span class='turkey'>e</span><span class='cranberry'>r</span>
+      <h1><span class='red'>T</span><span class='orange'>a</span><span class='yellow'>s</span><span class='green'>k</span>
+        <span class='blue'>M</span><span class='indago'>a</span><span class='violet'>n</span><span class='red'>a</span><span class='orange'>g</span><span class='yellow'>e</span><span class='green'>r</span>
       </h1>
   <!-- End of rainbow coloring -->
+  <!-- Making tabs for the weekdays -->
+<div class="weekdays">
+  <button class="tablinks" onClick="openWeekday(event,'Sunday')">Sunday</button>
+  <button class="tablinks" onClick="openWeekday(event,'Monday')">Monday</button>
+  <button class="tablinks" onClick="openWeekday(event,'Tuesday')">Tuesday</button>
+  <button class="tablinks" onClick="openWeekday(event,'Wednesday')">Wednesday</button>
+  <button class="tablinks" onClick="openWeekday(event,'Thursday')">Thursday</button>
+  <button class="tablinks" onClick="openWeekday(event,'Friday')">Friday</button>
+  <button class="tablinks" onClick="openWeekday(event,'Saturday')">Saturday</button>
+</div>
+<!-- IDs: Sunday=one, Monday=two, Tuesday=three, Wednesday=four, Thursday=five, Friday=six, Saturday=seven
+Continuing making tabs -->
+  <div id="Sunday" class="tabcontent sunday">
+    <h2 class="red">Sunday</h2>
+    <p>Hello, this is Sunday!</p>
+  </div>
+  <div id="Monday" class="tabcontent monday">
+    <h2 class="orange">Monday</h2>
+  </div>
+  <div id="Tuesday" class="tabcontent tuesday">
+    <h2 class="yellow">Tuesday</h2>
+  </div>
+  <div id="Wednesday" class="tabcontent wednesday">
+    <h2 class="green">Wednesday</h2>
+  </div>
+  <div id="Thursday" class="tabcontent thursday">
+    <h2 class="blue">Thursday</h2>
+  </div>
+  <div id="Friday" class="tabcontent friday">
+    <h2 class="indago">Friday</h2>
+  </div>
+  <div id="Saturday" class="tabcontent saturday">
+    <h2 class="violet">Saturday</h2>
+  </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
 <script src="scripts.js"></script>
 </body>
