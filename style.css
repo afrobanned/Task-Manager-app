@@ -1,5 +1,6 @@
 h1{
 font-family: 'IBM Plex Mono', monospace;
+text-align: center;
 }
 /* Need help adding a backgrounf image */
 body{
@@ -69,4 +70,7 @@ body{
 @keyframes fadeEffect {
     from {opacity: 0;}
     to {opacity: 1;}
+}
+.title{
+  background-color: black;
 }
