@@ -3,7 +3,7 @@ font-family: 'IBM Plex Mono', monospace;
 }
 /* Need help adding a backgrounf image */
 body{
-  background-image:
+  background-color:#f0fff0;
 }
 .red{
   color:Red;
