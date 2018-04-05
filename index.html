@@ -11,6 +11,8 @@
 <body>
   <!-- This div is creating a container for the whole body -->
   <div class="container">
+    <!-- This is xml copied from a website (make sure to ask about it in class) -->
+    <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 23" width="17" height="23"><style>.st0{fill:#fff;}</style><path class="st0" d="M0 10.5h17v2H0zM0 5h17v2H0zM0 16h17v2H0z"></path></svg>
   <!--All of this below is making the title (Task Manager) a rainbow color-->
       <h1><span class='red'>T</span><span class='orange'>a</span><span class='yellow'>s</span><span class='green'>k</span>
         <span class='blue'>M</span><span class='indago'>a</span><span class='violet'>n</span><span class='red'>a</span><span class='orange'>g</span><span class='yellow'>e</span><span class='green'>r</span>
@@ -26,11 +28,13 @@
   <button class="tablinks" onClick="openWeekday(event,'Friday')">Friday</button>
   <button class="tablinks" onClick="openWeekday(event,'Saturday')">Saturday</button>
 </div>
-<!-- IDs: Sunday=one, Monday=two, Tuesday=three, Wednesday=four, Thursday=five, Friday=six, Saturday=seven
-Continuing making tabs -->
+<!-- Adding a title content to the tabs -->
   <div id="Sunday" class="tabcontent sunday">
     <h2 class="red">Sunday</h2>
-    <p>Hello, this is Sunday!</p>
+    <p>Hello, this is Sunday! Put your tasks below</p>
+    <ol>
+      <li><input type="checkbox">potato</input></li>
+    </ol>
   </div>
   <div id="Monday" class="tabcontent monday">
     <h2 class="orange">Monday</h2>
