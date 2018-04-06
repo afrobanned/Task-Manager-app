@@ -4,7 +4,9 @@ text-align: center;
 }
 /* Need help adding a backgrounf image */
 body{
-  background-color:#f0fff0;
+  background-image:url(sunset.jpg);
+  height:1000px;
+  width:2000px;
 }
 .red{
   color:Red;
