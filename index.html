@@ -9,51 +9,17 @@
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
 </head>
 <body>
-    <!-- This is xml copied from a website (make sure to ask about it in class) -->
-    <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 23" width="17" height="23"><style>.st0{fill:#fff;}</style><path class="st0" d="M0 10.5h17v2H0zM0 5h17v2H0zM0 16h17v2H0z"></path></svg>
-  <!--All of this below is making the title (Task Manager) a rainbow color-->
-    <div class="title">
-      <h1><span class='red'>T</span><span class='orange'>a</span><span class='yellow'>s</span><span class='green'>k</span>
-        <span class='blue'>M</span><span class='indago'>a</span><span class='violet'>n</span><span class='red'>a</span><span class='orange'>g</span><span class='yellow'>e</span><span class='green'>r</span>
-      </h1>
-    </div>
-  <!-- End of rainbow coloring -->
-  <!-- Making tabs for the weekdays -->
-<div class="weekdays">
-  <button class="tablinks" onClick="openWeekday(event,'Sunday')">Sunday</button>
-  <button class="tablinks" onClick="openWeekday(event,'Monday')">Monday</button>
-  <button class="tablinks" onClick="openWeekday(event,'Tuesday')">Tuesday</button>
-  <button class="tablinks" onClick="openWeekday(event,'Wednesday')">Wednesday</button>
-  <button class="tablinks" onClick="openWeekday(event,'Thursday')">Thursday</button>
-  <button class="tablinks" onClick="openWeekday(event,'Friday')">Friday</button>
-  <button class="tablinks" onClick="openWeekday(event,'Saturday')">Saturday</button>
+<div class="container">
+  <ul class="menuItem">
+    <li><a href=""><b class="home">Task Manager</b></a></li>
+    <li><a href="contact me">Contact Me</a></li>
+    <li class="signIn"><a href="sign in">Sign In</a></li>
+  </ul>
 </div>
-<!-- Adding a title content to the tabs -->
-  <div id="Sunday" class="tabcontent sunday">
-    <h2 class="red">Sunday</h2>
-    <p>Hello, this is Sunday! Put your tasks below</p>
-    <ol>
-      <li><input type="checkbox">potato</input></li>
-    </ol>
-  </div>
-  <div id="Monday" class="tabcontent monday">
-    <h2 class="orange">Monday</h2>
-  </div>
-  <div id="Tuesday" class="tabcontent tuesday">
-    <h2 class="yellow">Tuesday</h2>
-  </div>
-  <div id="Wednesday" class="tabcontent wednesday">
-    <h2 class="green">Wednesday</h2>
-  </div>
-  <div id="Thursday" class="tabcontent thursday">
-    <h2 class="blue">Thursday</h2>
-  </div>
-  <div id="Friday" class="tabcontent friday">
-    <h2 class="indago">Friday</h2>
-  </div>
-  <div id="Saturday" class="tabcontent saturday">
-    <h2 class="violet">Saturday</h2>
-  </div>
+<div class="task-list">
+
+</div>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
 <script src="scripts.js"></script>
 </body>
