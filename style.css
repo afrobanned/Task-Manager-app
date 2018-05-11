@@ -50,17 +50,18 @@ float:right;
   float:right;
   background-color: red;
   border-bottom: 1px solid white;
-  font-size: 20px;font-style:Impact body copy
+  font-size: 25px;font-style:Impact body copy;
   width:150px;
-  height:35px;
+  height:40px;
   text-align:center;
+  margin-right: 50px;
+  padding-top: 18px;
 }
 .task{
   clear:both;
   margin:10px;
   border-bottom: 1px solid black;
-  font-size: 20px;
-
+  font-size: 40px;
 }
 #contact{
   float:right;
@@ -68,4 +69,11 @@ float:right;
 .imageURL{
   height:60px;
   width:80px;
+}
+.check{
+  height:20px;
+  width:20px;
+}
+.option{
+  float:right;
 }

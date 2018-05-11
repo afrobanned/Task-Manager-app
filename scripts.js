@@ -1,9 +1,17 @@
+// grabing data from airtable and displaying it on website
 var taskDetail = function(id, Tasks, Completed, Progress, ImageURL) {
+  console.log(Progress)
   return `<div class="task">
+  <img src="${ImageURL}" class="imageURL"/>
   <span class="task-name">${Tasks}</span>
   <span class="check"><input type="checkbox" ${Completed ? 'checked' : '' }></span>
-  <img src="${ImageURL}" class="imageURL"/>
   <span class="progress">${Progress}</span>
+  <select class="option">
+    <option ${Progress === 'Have to Start' ? 'selected' : ''} value="Have To Start">Have To Start</option>
+    <option ${Progress === 'In Progress' ? 'selected' : ''} value="In Progress">In Progress</option>
+    <option ${Progress === 'Procrastinating' ? 'selected' : ''} value="Procrastinating">Procrastinating</option>
+    <option ${Progress === 'Finished' ? 'selected' : ''} value="Finished">Finished</option>
+  </select>
   </div>`;
 }
 $.getJSON( "https://api.airtable.com/v0/appUAJSEFDMl7iv8C/Tasks?api_key=keyQ7f5YOlvzPBKe3", function( data ) {
