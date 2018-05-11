@@ -9,29 +9,8 @@ body{
   margin:0
 }
 .container{
-  width:1367px;
+  width:inherit;
   align-self: center;
-}
-.red{
-  color:Red;
-}
-.orange{
-  color:orange;
-}
-.yellow{
-  color:yellow;
-}
-.green{
-  color:green;
-}
-.blue{
-  color:blue;
-}
-.indago{
-  color:indigo;
-}
-.violet{
-  color:violet;
 }
 .menuItem{
   list-style-type: none;
@@ -58,12 +37,35 @@ body{
 .active{
   background-color: maroon
 }
-.signIn{
-float: right;
+#signIn{
+float:right;
 }
 .home{
   font;
 }
-.task-list{
+.task-name{
 
+}
+.progress{
+  float:right;
+  background-color: red;
+  border-bottom: 1px solid white;
+  font-size: 20px;font-style:Impact body copy
+  width:150px;
+  height:35px;
+  text-align:center;
+}
+.task{
+  clear:both;
+  margin:10px;
+  border-bottom: 1px solid black;
+  font-size: 20px;
+
+}
+#contact{
+  float:right;
+}
+.imageURL{
+  height:60px;
+  width:80px;
 }
