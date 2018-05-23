@@ -51,11 +51,12 @@ float:right;
   background-color: red;
   border-bottom: 1px solid white;
   font-size: 25px;font-style:Impact body copy;
-  width:150px;
+  width:160px;
   height:40px;
   text-align:center;
   margin-right: 50px;
   padding-top: 18px;
+  border-radius: 25px;
 }
 .task{
   clear:both;

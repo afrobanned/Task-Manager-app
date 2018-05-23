@@ -1,12 +1,12 @@
 // grabing data from airtable and displaying it on website
 var taskDetail = function(id, Tasks, Completed, Progress, ImageURL) {
-  console.log(Progress)
+  ///console.log(Progress)
   return `<div class="task">
   <img src="${ImageURL}" class="imageURL"/>
   <span class="task-name">${Tasks}</span>
   <span class="check"><input type="checkbox" ${Completed ? 'checked' : '' }></span>
   <span class="progress">${Progress}</span>
-  <select class="option">
+  <select class="option" id="${id}">
     <option ${Progress === 'Have to Start' ? 'selected' : ''} value="Have To Start">Have To Start</option>
     <option ${Progress === 'In Progress' ? 'selected' : ''} value="In Progress">In Progress</option>
     <option ${Progress === 'Procrastinating' ? 'selected' : ''} value="Procrastinating">Procrastinating</option>
@@ -17,7 +17,7 @@ var taskDetail = function(id, Tasks, Completed, Progress, ImageURL) {
 $.getJSON( "https://api.airtable.com/v0/appUAJSEFDMl7iv8C/Tasks?api_key=keyQ7f5YOlvzPBKe3", function( data ) {
   var items = [];
   $.each( data.records, function( index, val ) {
-    console.log(val.fields)
+    ///console.log(val.fields)
     var id = val.id;
     var ImageURL = val.fields["ImageURL"]
    var Tasks = val.fields["Tasks"];
@@ -27,5 +27,28 @@ $.getJSON( "https://api.airtable.com/v0/appUAJSEFDMl7iv8C/Tasks?api_key=keyQ7f5Y
     items.push( itemHTML )
   });
 
-$(".task-list" ).append(items.join(""));
+  $(".task-list" ).append(items.join(""));
+});
+
+$(document).on( "change", '.option', function( event ) {
+  event.preventDefault();
+
+  var id = $(this).attr('id');
+  var data = {
+    'fields': {
+      "Progress": $(this).val(),
+    }
+  }
+  console.log(data);
+
+  $.ajax({
+    method: 'POST',
+    url:`https://api.airtable.com/v0/appUAJSEFDMl7iv8C/Tasks/${id}`,
+    'headers': {
+      'Authorization': 'Bearer keyQ7f5YOlvzPBKe3',
+      'Content-type': 'application/json',
+    },
+    'data': JSON.stringify(data)
+  });
+
 });
